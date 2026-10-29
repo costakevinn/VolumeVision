@@ -1,0 +1,11 @@
+[project]
+name = "volume-vision"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "mediapipe==1.2.0",
+    "numpy==2.5.4",
+    "opencv-contrib-python==5.0.0.93",
+    "pyyaml==6.0.3",
+    "sounddevice==0.5.6",
+]

@@ -1,0 +1,18 @@
+model: models/hand_landmarker.task
+frame_width: 520
+
+window:
+  mode: web
+  port: 8000
+
+distance:
+  min: 20
+  max: 200
+
+tone:
+  hz: 440
+  max_gain: 0.5
+  sample_rate: 44100
+
+audio:
+  enabled: true

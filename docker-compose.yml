@@ -1,0 +1,13 @@
+name: volume-vision
+
+services:
+  app:
+    build: .
+    image: volume-vision:latest
+    command: python main.py
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    init: true
+    environment:
+      PULSE_SERVER: unix:/tmp/pulse
+    volumes:
+      - .:/app:ro

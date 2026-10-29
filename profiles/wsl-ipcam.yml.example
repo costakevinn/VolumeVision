@@ -1,0 +1,9 @@
+services:
+  app:
+    environment:
+      CAMERA_SOURCE: http://192.168.0.10:8080/video
+      AUDIO_DEVICE: pulse
+    volumes:
+      - /mnt/wslg/PulseServer:/tmp/pulse
+    ports:
+      - "127.0.0.1:8000:8000"

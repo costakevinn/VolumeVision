@@ -1,0 +1,13 @@
+services:
+  app:
+    environment:
+      CAMERA_SOURCE: "0"
+      AUDIO_DEVICE: pulse
+    devices:
+      - /dev/video0:/dev/video0
+    group_add:
+      - video
+    volumes:
+      - /run/user/1000/pulse/native:/tmp/pulse
+    ports:
+      - "127.0.0.1:8000:8000"
