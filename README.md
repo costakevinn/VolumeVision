@@ -30,7 +30,7 @@ The distance between the thumb tip and the index tip, estimated by a hand landma
 * **Machine learning inference:** a pretrained neural network (MediaPipe HandLandmarker) running in a real-time loop on CPU
 * **Gesture recognition:** landmark-based feature extraction and mapping to a control signal
 * **Real-time systems:** per-frame processing, video-mode tracking, callback-based audio, live MJPEG streaming
-* **Software engineering:** modular Python packages, YAML configuration, pinned dependencies, Git version control
+* **Software engineering:** modular Python packages, pinned dependencies, Git version control
 * **Reproducibility and MLOps basics:** Docker and Docker Compose, hardware profiles, read-only source mount
 
 ---
@@ -127,8 +127,6 @@ OpenCV
 NumPy
 
 Docker / Docker Compose
-
-YAML
 
 Git / GitHub
 
